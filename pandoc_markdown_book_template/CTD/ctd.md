@@ -261,7 +261,8 @@ A->>A: self to self
 A->>B: solid line solid arrow
 A-->>C: dashed line solid arrow
 B->>C: solid line dashed arrow
-B-->>A: dashed line dashed arrow```
+B-->>A: dashed line dashed arrow
+```
 
 ```gantt
 dateFormat  YYYY-MM-DD
@@ -280,24 +281,6 @@ section 里程碑 0.3
 上线               :       p7, after p6, 2d
 交付               :       p8, afterp7, 2d
 ```
-
-$$c = \sqrt{a^{2}+b_{xy}^{2} +e^{x}}$$
-
-$\frac{x^{2}y^{2}}{x+y}$
-
-$\sum_{i=0}^{n}$$\prod_\epsilon$
-
-$\int_{a}^{\pi} f(x) \,dx$ 
-
-$ \lim_{x \to +\infty}\frac{1}{x}$
-
-$$\frac{\partial^2 u}{\partial z^2}$$
-
-$$\cos2\theta = cos^2\theta - \sin^2 \theta \\ =
-2\cos^2\theta -1$$
-
-
-
 ```java
 package com.qyf404.learn.maven;
 import org.junit.After;
@@ -373,3 +356,22 @@ io=>inputoutput: catch something...
 st->op1->cond
 cond(yes)->io->e
 cond(no)->sub1(right)->op1
+```
+
+
+
+$$c = \sqrt{a^{2}+b_{xy}^{2} +e^{x}}$$
+
+$\frac{x^{2}y^{2}}{x+y}$
+
+$\sum_{i=0}^{n}$$\prod_\epsilon$
+
+$\int_{a}^{\pi} f(x) \,dx$ 
+
+$ \lim_{x \to +\infty}\frac{1}{x}$
+
+$$\frac{\partial^2 u}{\partial z^2}$$
+
+$$\cos2\theta = cos^2\theta - \sin^2 \theta \\ =
+2\cos^2\theta -1$$
+
