@@ -11,3 +11,29 @@ Identifying correct Satellite Imagery data, reading and downloading through [Goo
 
 If you are struggling to get Satellite Image Data then this is the right place for you. Here I am giving resources that will help to get correct Satellite Imagery and filter as per your requirement. First you will learning how to identify accurate and correct Satellite Imagery Data from [USGS](https://earthexplorer.usgs.gov/) Earth Explorer. So, first you have to select the region of your interest, and apply filter with different parameter. For selecting different paramentere you can learn from [here](https://towardsdatascience.com/access-satellite-imagery-with-aws-and-google-colab-4660178444f5). Once data ther filtered data is ready you will get Satellite image data id which you have to use latter in Google Colab for downloading. 
 Know more about Landsat-8 [YouTube video](https://www.youtube.com/watch?v=A6WzAc1FTeA). 
+
+Once the Satellite Image is downloaded you can visualize the image data using diferent bands . Landsat-8 has from band 1 to band 11. If you want to explore more about Landsat-8 bands in more detials click [here](https://blog.mapbox.com/putting-landsat-8s-bands-to-work-631c4029e9d1).
+# Landsat-8 and its Bands
+A ***band*** is any range of frequencies along the electromagnetic spectrum — a color, although not necessarily a color visible to the human eye. Of its 11 bands, only those in the very shortest wavelengths (bands 1–4 and 8) sense visible light — all the others are in parts of the spectrum that we can’t see.
+ 
+1. **Band 1** senses deep blues and violets. 
+2. **Bands 2, 3, and 4** we’ve seen: they’re visible blue, green, and red.
+1. **Band 5** measures the near infrared, or NIR
+1. **Bands 6 and 7** cover different slices of the shortwave infrared, or SWIR
+1. **Band 8 **is the panchromatic — or just pan — band
+1. **Band 9** shows the least, yet it’s one of the most interesting features of Landsat 8. It covers a very thin slice of wavelengths: only 1370 ± 10 nanometers.
+1. **Bands 10 and 11** are in the thermal infrared, or TIR — they see heat.
+
+Two important things are to give focus on, file name  and Metadata of Satellite Image. File name has its of [convension](https://www.usgs.gov/faqs/what-naming-convention-landsat-collections-level-1-scenes?qt-news_science_products=0#qt-news_science_products) which tell you when, how and what sensors are used to collect data. Metadata tells you how the data were processed, where the data are from and how they are stuctured. 
+
+## Landsat 8 Bands
+
+| Band |	Wavelength range (nanometers)	| Spatial Resolution (m) |	Spectral Width (nm) |	Units |	Data Type	| Fill Value (no data) |	Range |	Valid Range	| Scale Factor |
+|----------|---------|-----------|----------|---------|------|-----|------|--------|-------|
+| Band 1 - Coastal aerosol |	430 - 450	| 30 |	2.0	 | Reflectance	| 16-bit signed integer (int16)	| -9999	| -2000 to 16000	| 0 to 10000 |	0.0001 |
+| Band 2 - Blue	| 450 - 510	| 30	| 6.0 |	Reflectance	| 16-bit signed integer (int16) |	-9999 |	-2000 to 16000 |	0 to 10000 |	0.0001 |
+| Band 3 - Green	| 530 - 590	| 30	| 6.0 |	Reflectance	| 16-bit signed integer (int16) |	-9999	| -2000 to 16000	| 0 to 10000	| 0.0001 |
+| Band 4 - Red	| 640 - 670	| 30	| 0.03 |	Reflectance	| 16-bit signed integer (int16) |	-9999	| -2000 to 16000	| 0 to 10000	| 0.0001 |
+| Band 5 - Near Infrared (NIR)	| 850 - 880 |	30	| 3.0	| Reflectance	| 16-bit signed integer (int16) |	-9999	| -2000 to 16000 |	0 to 10000 |	0.0001 |
+| Band 6 - SWIR 1	| 1570 - 1650	| 30	| 8.0 |	Reflectance	| 16-bit signed integer (int16) |	-9999	| -2000 to 16000	| 0 to 10000	| 0.0001 |
+| Band 7 - SWIR 2	| 2110 - 2290	| 30	| 18 |	Reflectance	| 16-bit signed integer (int16) |	-9999 |	-2000 to 16000 |	0 to 10000 |	0.0001 |
