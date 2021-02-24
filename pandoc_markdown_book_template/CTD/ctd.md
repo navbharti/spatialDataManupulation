@@ -182,13 +182,22 @@ I can include as many plantuml segments as I want in my Markdown, and the diagra
 @enduml
 ```
 
+### Student Class Diagram
+```plantuml
+@startuml
+
+```
+
 ### uml: class diagram
 ```plantuml
 @startuml
+skinparam handwritten true
 package "customer domain" #DDDDDD {
     class Contact {
         + email
         + phone
+        + mobile
+        + road
     }
 
     class Address {
