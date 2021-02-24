@@ -3,7 +3,7 @@
 |-----|------------------------------|--------|
 |Hacker Rank, <br> Hacker Earth <br>and Code chef| No of problems: 42| |
 |s.no|Problem|Solution|
-|1|[Introduction to Conditional Statements](https://www.hackerrank.com/challenges/30-conditional-statements)|[Solution](pandoc_markdown_book_template/CTD/codes/cond_state30.c)|
+|1|[Introduction to Conditional Statements](https://www.hackerrank.com/challenges/30-conditional-statements)|[Solution](../CTD/codes/cond_state30.c)|
 |2|[Conditional Statements in C](https://www.hackerrank.com/challenges/conditional-statements-in-c)|[Solution]()|
 |3|[Library Fine](https://www.hackerrank.com/challenges/library-fine/problem)|[Solution]()|
 |4|[Nested Logic](https://www.hackerrank.com/challenges/30-nested-logic/problem)|[Solution]()|
